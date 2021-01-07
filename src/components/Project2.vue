@@ -23,11 +23,15 @@
         </b-embed>
       </b-col>
       <b-col cols="12" class="project-text">
-        <p><span class="emphasis">Tech: </span> Words, words, words, words</p>
+        <p><span class="emphasis">Tech: </span> Wix.com | Photoshop</p>
         <p>
-          <span class="emphasis">What it is: </span> Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          <span class="emphasis">What it is: </span> A site promoting client's
+          business.
+        </p>
+        <p>
+          <span class="emphasis">The Platform: </span> I created this client's
+          website on Wix.com, as it is user friendly, which allows the client to
+          easily make changes when need be.
         </p>
         <p>
           <span class="emphasis">The cool thing about it: </span> Lorem ipsum

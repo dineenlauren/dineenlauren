@@ -18,8 +18,8 @@
           muted
           allowfullscreen
         >
-          <source src="../assets/union-street-capital.webm" type="video/webm" />
-          <source src="../assets/union-street-capital.mp4" type="video/mp4" />
+          <source src="../assets/om.webm" type="video/webm" />
+          <source src="../assets/om.mp4" type="video/mp4" />
         </b-embed>
       </b-col>
       <b-col cols="12" class="project-text">

@@ -22,7 +22,7 @@
     name: 'SiteNav',
     data() {
       return {
-        logo: require('../assets/logo.png'),
+        logo: require('../assets/dineenlauren2.png'),
       };
     },
   };
@@ -40,7 +40,7 @@
     border-bottom: solid 1px black !important;
   }
   .logo-img {
-    height: 30px;
+    height: 50px;
   }
   #nav a {
     font-weight: bold;
