@@ -1,85 +1,79 @@
 <template>
-  <section>
-    <article>
-      <h5>First article</h5>
-      <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-      </div>
-    </article>
-
-    <article>
-      <h5>First article</h5>
-      <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-      </div>
-    </article>
-
-    <article>
-      <h5>First article</h5>
-      <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-      </div>
-    </article>
-  </section>
+  <b-container fluid="sm" class="mt-5 content-container relative">
+    <div class="project-title">
+      <h3>Union Street Capital</h3>
+      <ul>
+        <li>
+          <a href="https://www.unionstreetcap.com/" target="blank">View Site</a>
+        </li>
+      </ul>
+    </div>
+    <b-row align-h="center">
+      <b-col cols="12" lg="11" class="video-gif">
+        <b-embed
+          type="video"
+          aspect="4by3"
+          controls
+          loop="true"
+          muted
+          allowfullscreen
+        >
+          <source src="../assets/union-street-capital.webm" type="video/webm" />
+          <source src="../assets/union-street-capital.mp4" type="video/mp4" />
+        </b-embed>
+      </b-col>
+      <b-col cols="12" class="project-text">
+        <p><span class="emphasis">Tech: </span> Words, words, words, words</p>
+        <p>
+          <span class="emphasis">What it is: </span> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+        <p>
+          <span class="emphasis">The cool thing about it: </span> Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </p>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
-export default {
-  name: "Project2"
-};
+  export default {
+    name: 'Project2',
+  };
 </script>
 
 <style scoped>
-h5 {
-  border: 1px solid purple;
-}
+  .project-title {
+    background-color: #a4aa84;
+  }
+  .content-container {
+    border-radius: 10px;
+    box-shadow: 5px 15px 31px #706e6e;
+    margin-bottom: 20px;
+    padding: 0px 0 20px 0 !important;
+  }
+  .emphasis {
+    font-weight: 700;
+  }
 
-section {
-  display: flex;
-  border: 2px solid red;
-}
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li > a {
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-article {
-  flex: 1 200px;
-  padding: 10px;
-  margin: 10px;
-  background: aqua;
-  border: 2px solid blue;
-}
-
-article div {
-  border: 1px solid green;
-  flex: 1 100px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-article:nth-of-type(3) {
-  flex: 3 200px;
-  display: flex;
-  flex-flow: column;
-}
+  @media only screen and (min-width: 576px) {
+    .content-container {
+      max-width: 600px;
+    }
+  }
 </style>

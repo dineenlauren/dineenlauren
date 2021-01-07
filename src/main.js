@@ -2,24 +2,24 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store';
-import { LayoutPlugin } from 'bootstrap-vue';
-
-import { NavbarPlugin } from 'bootstrap-vue';
-import { VBScrollspyPlugin } from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
 // import { BootstrapVue } from 'bootstrap-vue';
 import { EmbedPlugin } from 'bootstrap-vue';
-Vue.use(EmbedPlugin);
-// Vue.use(BootstrapVue);
-Vue.use(LayoutPlugin);
+import { LayoutPlugin } from 'bootstrap-vue';
+import { NavbarPlugin } from 'bootstrap-vue';
+import { VBScrollspyPlugin } from 'bootstrap-vue';
 import { ImagePlugin } from 'bootstrap-vue';
-Vue.use(ImagePlugin);
-Vue.use(VBScrollspyPlugin);
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+
+Vue.use(EmbedPlugin);
+Vue.use(LayoutPlugin);
 Vue.use(NavbarPlugin);
+Vue.use(VBScrollspyPlugin);
+Vue.use(ImagePlugin);
 
 Vue.config.productionTip = false;
 
+// Vue.use(BootstrapVue);
 new Vue({
   router,
   store,
