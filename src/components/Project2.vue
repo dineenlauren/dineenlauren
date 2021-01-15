@@ -34,9 +34,7 @@
           easily make changes when need be.
         </p>
         <p>
-          <span class="emphasis">The cool thing about it: </span> Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+          <span class="emphasis">The cool thing about it: </span>
         </p>
       </b-col>
     </b-row>

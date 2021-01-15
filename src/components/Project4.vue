@@ -1,66 +1,102 @@
 <template>
-  <div class="experience mt-5">
-    <b-container>
-      <div>
-        <h4>Top and Bottom</h4>
-        <b-card-group deck>
-          <b-card img-src="https://placekitten.com/1000/300" img-alt="Card image" img-top>
-            <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-          </b-card>
-
-          <b-card img-src="https://placekitten.com/1000/300" img-alt="Card image" img-bottom>
-            <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-          </b-card>
-        </b-card-group>
-      </div>
-    </b-container>
-  </div>
+  <b-container fluid="sm" class="content-container relative">
+    <div class="project-title">
+      <h3 class="m-0">Potter / Star Wars API</h3>
+      <ul>
+        <li>
+          <a
+            href="https://www.dineenlauren.com/vue-app-project/#/"
+            target="blank"
+            >View Site</a
+          >
+        </li>
+        <li class="mx-2">|</li>
+        <li>
+          <a
+            href="https://github.com/dineenlauren/vue-app-project/tree/gh-pages"
+            target="blank"
+            >View Code</a
+          >
+        </li>
+      </ul>
+    </div>
+    <b-row align-h="center">
+      <b-col cols="12" lg="11" class="video-gif">
+        <b-embed
+          type="video"
+          aspect="4by3"
+          controls
+          loop="true"
+          muted
+          allowfullscreen
+        >
+          <source src="../assets/first-api.webm" type="video/webm" />
+          <source src="../assets/first-api.mp4" type="video/mp4" />
+        </b-embed>
+      </b-col>
+      <b-col cols="12" class="project-text">
+        <p><span class="emphasis">Tech: </span> Vue | Axios | BootstrapVue</p>
+        <p>
+          <span class="emphasis">What it is: </span> My first ever API project
+          using Vue.js and Axios
+        </p>
+        <p>
+          <span class="emphasis">The cool thing about it: </span>
+        </p>
+        <b-row cols="1">
+          <b-col>
+            <p class="emphasis-sm">
+              [ one ]
+            </p>
+          </b-col>
+          <b-col class="mt-3">
+            <p class="emphasis-sm">
+              [ two ]
+            </p>
+            <p></p>
+          </b-col>
+        </b-row>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>
-// @ is an alias to /src
-
-export default {
-  name: "Project4"
-};
+  export default {
+    name: 'Project1',
+  };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.yellow {
-  background-color: rgba(251, 255, 0, 0.3);
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 5px;
-}
+  .project-title {
+    background-color: #a4aa84;
+  }
+  .content-container {
+    border-radius: 10px;
+    box-shadow: 5px 15px 31px #706e6e;
+    margin-bottom: 20px;
+    padding: 0px 0 20px 0 !important;
+  }
+  .emphasis {
+    font-weight: 700;
+  }
 
-.title-blue {
-  background-color: rgba(0, 153, 255, 0.3);
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 5px;
-}
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  li > a {
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-.box-container {
-  margin: 2rem 0 0 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.skill-title {
-  color: #ca7a69 !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-.skill-box {
-  border: 1px solid#CA7A69 !important;
-  border-radius: 0.4rem !important;
-  color: #706e6e !important;
-}
+  @media only screen and (min-width: 576px) {
+    .content-container {
+      max-width: 600px;
+    }
+  }
 </style>

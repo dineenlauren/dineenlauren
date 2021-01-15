@@ -23,16 +23,12 @@
         </b-embed>
       </b-col>
       <b-col cols="12" class="project-text">
-        <p><span class="emphasis">Tech: </span> Words, words, words, words</p>
+        <p><span class="emphasis">Tech: </span></p>
         <p>
-          <span class="emphasis">What it is: </span> Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          <span class="emphasis">What it is: </span>
         </p>
         <p>
-          <span class="emphasis">The cool thing about it: </span> Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
+          <span class="emphasis">The cool thing about it: </span>
         </p>
       </b-col>
     </b-row>
